@@ -27,8 +27,8 @@ module.exports = {
       amazon_yellow: "#febd69",
       whiteText :"#ffffff",
       lightText :"#ccc",
-      quantity_box :"F0F2F2",
-      footerBottom :"131A22"
+      quantity_box :"#F0F2F2",
+      footerBottom :"#131A22"
     },
     boxShadow:{
       textShadow :"0px 0px 32px 1px rgba(199,199,199,1)",

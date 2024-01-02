@@ -1,22 +1,22 @@
 import React from 'react';
-import { footer_list } from "../../constants/Data";
 
-function FootetMiddleList() {
-  return (
-    <>
-      {footer_list.map((value, index) => (
-        <div  key={index}>
-          <h3 className="text-whiteText">{value.title}</h3>
-          {value.list.map((val, innerIndex) => (
-            <ul key={innerIndex}>
-              <li className="footerlink">{val.listitem}</li>
-              <li className="footerlink">{val.listitem}</li>
-            </ul>
 
-          ))}
-        </div>
-      ))}
-    </>
+function FootetMiddleList({title,ListItem}) {
+  return (   
+    <div>
+        <h3 className='font-titleFont text-whiteText text-base font-semibold mb-3'> {title} </h3>
+        <ul className='flex flex-col gap-2 font-bodyFont'>
+     
+          {
+             ListItem.map((item)=> 
+             item.ListData.map((data,i)=>
+              <li key={i} className='footerlink'>{data}</li>
+             ))
+          }   
+      
+        </ul>
+
+    </div>
   );
 }
 

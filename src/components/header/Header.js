@@ -13,7 +13,7 @@ const Header = ()=> {
     const [showAll,setshowAll] = useState(false);
   
   return (
-    <div className='w-full'>
+    <div className='w-full sticky top-0 z-50'>
        <div className=' bg-amazon_blue  text-whiteText px-4 py-2  flex items-center gap-4'>
         {/* logo */}
           <div className='header-container'>

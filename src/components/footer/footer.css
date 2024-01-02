@@ -37,11 +37,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #232F3E;
+    background-color:#27384a;
     padding:10px;
 }
 .sectionOne:hover{
-    background-color: #232F3E;
+    background-color: #3a4959;
+  
 }
 .option_1{
     display: flex;
