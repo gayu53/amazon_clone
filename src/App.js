@@ -30,7 +30,7 @@ function App() {
 
   ));
   return (
-    <div className="App">
+    <div className= " font-bodyFont  bg-[#F5F5F5]">
     <RouterProvider router={router}>
 
     </RouterProvider>
