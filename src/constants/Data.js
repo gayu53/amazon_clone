@@ -29,12 +29,10 @@ export const middleList =[
          {
             _id :"001",
             ListData:[
+               "About Us",
                "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
+               "Press Releases",
+               "Amazon Science",
             ],
          },
       ],
@@ -42,51 +40,50 @@ export const middleList =[
 
    {
       _id:229,
-      title :"Get to know Us",
+      title :"Connect with Us",
       ListItem:[
          {
             _id :"002",
             ListData:[
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
+               "Facebook",
+               "Twitter",
+               "Instagram",
             ],
          },
       ],
    },
    {
       _id:252,
-      title :"Get to know Us",
+      title :"Make Money with Us",
       ListItem:[
          {
             _id :"003",
             ListData:[
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
+               "Sell on Amazon",
+               "Sell under Amazon Accelerator",
+               "Protect and Build Your Brand",
+               "Amazon Global Selling",
+               "Become an Affiliate",
+               "Fulfilment by Amazon",
+               "Advertise Your Products",
+               "Amazon Pay on Merchants",
             ],
          },
       ],
    },
    {
       id:282,
-      title :"Get to know Us",
+      title :"Let Us Help You",
       ListItem:[
          {
             _id :"004",
             ListData:[
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
-               "Careers",
-               "Blog",
+               "COVID-19 and Amazon",
+               "Your Account",
+               "Returns Centre",
+               "100% Purchase Protection",
+               "Amazon App Download",
+               "Help",
             ],
          },
       ],
@@ -94,6 +91,14 @@ export const middleList =[
 ]
 
 export const country_List =[
+   {country:"Australia"},
+   {country:"Brazil"},
+   {country:"Canada"},
+   {country:"China"},
+   {country:"France"},
+   {country:"Germany"},
+   {country:"Italy"},
+   {country:"Japan"},
    {country:"Australia"},
    {country:"Brazil"},
    {country:"Canada"},

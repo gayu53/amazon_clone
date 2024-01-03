@@ -7,9 +7,13 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import  {allItems} from "../../constants/Data";
 import HeaderBottom from './HeaderBottom';
 import "../header/header.css" ;
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 const Header = ()=> {
+     const products =useSelector((state)=>state.amazonReducer)
+     console.log(products)
     const [showAll,setshowAll] = useState(false);
   
   return (
@@ -44,11 +48,16 @@ const Header = ()=> {
          </div>
 
          {/* Sign in */}
+
+         
+         <Link to ="/SignIn">
          <div className='flex flex-col items-start justify-center '>
           <p className='text-xs text-lightText font-light'>Hello, Sign in </p>
           <p className='text-sm font-semibold -mt-1 text-whiteText '>Accounts & Lists  <span><ArrowDropDownOutlinedIcon/></span>   
           </p>
          </div>
+         </Link>
+
         {/* Return */}
         <div className='flex flex-col items-start justify-center '>
         <p className='text-xs text-lightText font-light'>Returns </p>
@@ -59,7 +68,9 @@ const Header = ()=> {
          <ShoppingCartIcon/>
          <p className='text-xs font-semibold mt-3 text-whiteText '>
            cart 
-         <span className='text-xs absolute -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue flex items-center justify-center rounded-full '> 0</span></p>
+         <span className='text-xs absolute -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue flex items-center justify-center rounded-full '> 
+         {products.length > 0 ? products.length:0}
+         </span></p>
          </div>
     </div>
 
